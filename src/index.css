@@ -1,0 +1,784 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Css */
+
+.navbar {
+  height: 80px;
+}
+
+
+.navbar .container-fluid .d-flex .header-search {
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+
+.navbar .container-fluid .d-flex .form-control {
+  border-radius: 10px;
+  padding: 3px 1px;
+}
+
+.navbar .container-fluid .navbar-collapse {
+  z-index: 100;
+}
+
+.navbar .nav-link{
+  width: auto;
+  height: auto;
+  font-weight: 550;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar .nav-link:hover{
+  color: rgb(20, 125, 244);
+  border-bottom:3px solid rgb(20, 125, 244);
+}
+
+
+
+/* Footer */
+.registration .container .row .content {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid orange;
+  background-color: orange;
+}
+
+.registration .container .row .content button {
+  background-color: rgb(20, 125, 244);
+  color: white;
+  font-size: 18px;
+  width: 280px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  background: #222;
+  color: white;
+}
+
+
+footer .container .row .services p li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+footer .container .row .services p li a:hover {
+  text-decoration: none;
+  color: rgb(20, 125, 244);
+}
+
+
+/* Home */
+
+
+/* slider */
+
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider .slider-container .swiperslide {
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slider .slider-container {
+  width: 94%;
+  height: auto;
+  margin-left: 40px;
+  overflow: hidden;
+}
+
+.slider .pic1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  animation-name: picanime;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes picanime {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.11);
+  }
+}
+
+.slider .swiperslide .cont p {
+  position: absolute;
+  z-index: 1000;
+  color: white;
+  font-size: 50px;
+  top: 32%;
+  width: 530px;
+  margin-left: 50px;
+  font-weight: 700;
+  overflow: hidden;
+  display: inline;
+  animation-name: anime;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+
+
+@keyframes anime {
+  from {
+    transform: translatex(-200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.slider .pic2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation-name: picanime;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+.slider .slider-container .slick-dots {
+  bottom: 0px;
+}
+
+
+
+
+/* about */
+
+.about {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.about .container .row .images {
+  position: relative;
+  height: 100vh;
+}
+
+.about .container .row .images .img1 {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  animation-name: pic1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes pic1 {
+  from {
+    transform: translateX(-10px);
+  }
+
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.about .container .row .images .img2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation-name: pic2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes pic2 {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.about .container .row .images .img3 {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  animation-name: pic3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes pic3 {
+  from {
+    transform: translateY(-8px);
+  }
+
+  to {
+    transform: translateY(8px);
+  }
+}
+
+.about .container .row .content {
+  height: 90vh;
+}
+
+.about .container .row .content button {
+  width: 250px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 13px;
+  border: none;
+  background-color: rgb(20, 125, 244);
+  transition: all 0.5s ease-in-out;
+  margin-top: 50px;
+}
+
+.about .container .row .content button:hover {
+  background-color: black;
+}
+
+.about .container .row .content button a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Purpose */
+.purpose {
+  width: 100%;
+  height: auto;
+}
+
+.purpose h1 {
+  font-weight: 700;
+}
+
+.purpose h3 {
+  font-weight: 650;
+}
+
+.purpose .container .row .box {
+  width: 350px;
+  border: 2px solid rgb(0, 0, 0, 0.4);
+  transition: all 1s ease-in-out;
+}
+
+.purpose .container .row .box:hover {
+  border: 2px solid rgb(20, 125, 244);
+  transform: scale(1.1);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+/*Section Experience */
+.experience {
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid rgb(0, 0, 0, 0.1);
+  background-color: rgb(20, 125, 244);
+}
+
+.experience h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 750;
+  margin-bottom: 50px;
+}
+
+.experience .container .row .col-md-2 {
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 210px;
+  margin-bottom: 80px;
+}
+
+.experience .container .row .col-md-2 .logo {
+  font-size: 60px;
+  color: orange;
+  margin-top: 20px;
+  transition: all 1s ease-in-out;
+}
+
+.experience .container .row .col-md-2 .logo:hover {
+  transform: rotatey(360deg);
+}
+
+
+
+.experience .container .row .col-md-2 div span {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  margin-top: 20px;
+}
+
+.experience .container .row .col-md-2 p {
+  color: white;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Clients */
+.clients .container .row .images {
+  width: auto;
+  height: auto;
+  margin-top: 30px;
+}
+
+.clients .container .row .images img {
+  width: 164px;
+  height: 175px;
+}
+
+
+/* Services */
+.services .container .row .content {
+  background-color: white;
+  width: 270px;
+  height: 450px;
+  margin-left: 15px;
+  transition: all 1s ease-in-out;
+}
+
+.services .container .row .content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.7);
+  /* color: rgb(215, 142, 7); */
+}
+
+.services .container .row .content .logo i {
+  color: orange;
+  font-size: 35px;
+  transition: all 0.8s ease-in-out;
+  animation-name: logo;
+  animation-duration: 1s;
+  animation-iteration-count: initial;
+}
+
+.services .container .row .content .logo i:hover {
+  transform: rotatey(360deg);
+}
+
+@keyframes logo {
+  from {
+    transform: rotatey(0deg);
+  }
+
+  to {
+    transform: rotatey(360deg);
+  }
+}
+
+/* Examination */
+
+.examination .container .row .data {
+  width: 380px;
+  height: 500px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.examination .container .row .data .image {
+  overflow: hidden;
+}
+
+.examination .container .row .data img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  transition: all 1s ease-in-out;
+}
+
+.examination .container .row .data img:hover {
+  transform: scale(1.1);
+}
+
+
+/* Media 640px */
+
+@media(max-width:640px) {
+  footer {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .about .container .row .images {
+    position: relative;
+    height: 100vh;
+  }
+
+  .about .container .row .images .img1 {
+    width: 320px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+
+  .about .container .row .images .img2 {
+    position: absolute;
+    top: 180px;
+    width: 300px;
+    left: 0;
+    bottom: 0;
+  }
+
+  .about .container .row .images .img3 {
+    position: absolute;
+    width: 250px;
+    right: 0;
+    bottom: 0px;
+  }
+
+
+  .about .container .row .content button {
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 13px;
+    border: none;
+    background-color: rgb(20, 125, 244);
+    transition: all 0.5s ease-in-out;
+    margin-top: 50px;
+  }
+
+  .navbar .container-fluid .navbar-collapse {
+    background-color: white;
+  }
+
+
+  .slider .swiperslide .cont p {
+    position: absolute;
+    z-index: 1000;
+    color: white;
+    font-size: 40px;
+    top: 32%;
+    width: 300px;
+    margin-left: 50px;
+    font-weight: 700;
+    display: inline;
+  }
+
+  .slider .slider-container {
+    margin-left: 15px;
+    height: auto;
+  }
+
+  .experience .container .row .col-md-2 {
+    margin-left: 90px;
+  }
+
+  .services .container .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
+
+
+/* About Us Page */
+
+.aboutus .container .row .image {
+  position: relative;
+}
+
+
+.aboutus .container .row .image .img1 {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  animation-name: img1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes img1 {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.aboutus .container .row .image .img2 {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  bottom: 150px;
+  right: 0px;
+  z-index: 2;
+  animation-name: img2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes img2 {
+  from {
+    transform: translateY(-50px) translateX(-5px);
+  }
+
+  to {
+    transform: translateY(20px) translateX(5px);
+  }
+}
+
+.aboutus .container .row .image .img3 {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  animation-name: img3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes img3 {
+  from {
+    transform: translateX(-15px);
+  }
+
+  to {
+    transform: translateX(15px);
+  }
+}
+
+.mission .container .row .content {
+  height: auto;
+  margin-top: 20px
+}
+
+/* Values */
+
+
+.values .container .row .content {
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(237, 237, 237);
+  margin-left: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.7);
+  transition: all 1s ease-in-out;
+}
+
+.values .container .row .content h5 {
+  color: orange;
+}
+
+.values .container .row .content:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.9);
+}
+
+/* Offer */
+.offer .container .row .content {
+  background-color: white;
+  width: 270px;
+  height: 450px;
+  margin-left: 15px;
+  transition: all 1s ease-in-out;
+}
+
+.offer .container .row .content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.offer .container .row .content .logo i {
+  color: orange;
+  font-size: 35px;
+  transition: all 0.8s ease-in-out;
+  animation-name: logo;
+  animation-duration: 1s;
+  animation-iteration-count: initial;
+}
+
+.offer .container .row .content .logo i:hover {
+  transform: rotatey(360deg);
+}
+
+
+/* Delievery */
+
+.delivery .container .row .image {
+  overflow: hidden;
+}
+
+.delivery .container .row .image img {
+  transition: all 1s ease-in-out;
+}
+
+.delivery .container .row .image img:hover {
+  transform: scale(1.05);
+}
+
+.delivery .container .row .content {
+  font-size: 20px;
+  color: gray;
+}
+
+/* Process section start */
+.process .container .row .col-md-2 {
+  width: 200px;
+  height: 350px;
+  margin-left: 25px;
+  text-align: center;
+}
+
+
+/* Infrastructure */
+.infra .container .row .content {
+  font-size: 20px;
+  color: gray;
+}
+
+.infra .container .row .image {
+  overflow: hidden;
+}
+
+.infra .container .row .image img {
+  transition: all 1s ease-in-out;
+}
+
+.infra .container .row .image img:hover {
+  transform: scale(1.05);
+}
+
+/* Sector Section  */
+.sector p ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.sector p ul li img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width:640px) {
+  .aboutus .container .row .image {
+    width: 100%;
+    height: 500px;
+  }
+
+  .aboutus .container .row .image .img1 {
+    width: 320px;
+    height: 200px;
+  }
+
+  .aboutus .container .row .image .img2 {
+    width: 300px;
+    height: 200px;
+  }
+
+  .aboutus .container .row .image .img3 {
+    width: 300px;
+    height: 250px;
+  }
+
+  .offer .container .row {
+    margin-left: 35px;
+  }
+
+  .process .container .row .col-md-2 {
+    margin-left: 85px;
+  }
+}
+
+
+/* Enquriy Form */
+.enquiry-image .img{
+  width: 100%;
+  height: 280px;
+  position: relative;
+}
+
+.enquiry-image h1{
+ position: absolute;
+ color: white;
+ top:40%;
+ left:37%;
+ z-index: 100;
+ font-size: 60px;
+ font-weight: 700;
+ text-shadow: 0px 0px 20px black;
+}
+
+.enquiry-image .img img{
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width:640px) {
+  .enquiry-image .img{
+    width: 100%;
+    height: 150px;
+  }
+  
+  .enquiry-image .img img{
+    width: 100%;
+    height: 100%;
+  } 
+}
