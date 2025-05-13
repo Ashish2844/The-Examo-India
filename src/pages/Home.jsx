@@ -1,4 +1,4 @@
-import { React} from 'react'
+import { React } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Link } from "react-router-dom";
@@ -14,7 +14,7 @@ import pic2 from './../assets/images/exampic2.jpg'
 import { MdOutlinePersonPin } from "react-icons/md";
 import { FaRegHandshake } from "react-icons/fa";
 import { IoEarthOutline } from "react-icons/io5";
-import CountUp from 'react-countup';
+import Counter from '../components/Counter';
 import { FaFlagCheckered } from "react-icons/fa";
 import { FaMap } from "react-icons/fa";
 import { FaChair } from "react-icons/fa";
@@ -146,13 +146,13 @@ const Home = () => {
                 <div className="logo">
                   <FaFlagCheckered />
                 </div>
-                <CountUp start={0} end={15} delay={2} duration={5}>
+                <Counter start={0} end={15} delay={2} duration={5}>
                   {({ countUpRef }) => (
                     <div>
-                      <span ref={countUpRef} />
+                      <span ref={countUpRef}></span>
                     </div>
                   )}
-                </CountUp>
+                </Counter>
                 <p>Countries</p>
               </div>
 
@@ -160,13 +160,13 @@ const Home = () => {
                 <div className="logo">
                   <FaMap />
                 </div>
-                <CountUp start={0} end={427} delay={1} duration={5}>
+                <Counter start={0} end={427} delay={1} duration={5}>
                   {({ countUpRef }) => (
                     <div>
                       <span ref={countUpRef} />
                     </div>
                   )}
-                </CountUp>
+                </Counter>
                 <p>Cities</p>
               </div>
 
@@ -174,13 +174,13 @@ const Home = () => {
                 <div className="logo">
                   <FaChair />
                 </div>
-                <CountUp start={0} end={58739} delay={1} duration={5}>
+                <Counter start={0} end={58739} delay={1} duration={5}>
                   {({ countUpRef }) => (
                     <div>
                       <span ref={countUpRef} />
                     </div>
                   )}
-                </CountUp>
+                </Counter>
                 <p>Seats</p>
               </div>
 
@@ -188,13 +188,13 @@ const Home = () => {
                 <div className="logo">
                   <IoLocation />
                 </div>
-                <CountUp start={0} end={2896} delay={1} duration={5}>
+                <Counter start={0} end={2896} delay={1} duration={5}>
                   {({ countUpRef }) => (
                     <div>
                       <span ref={countUpRef} />
                     </div>
                   )}
-                </CountUp>
+                </Counter>
                 <p>Examination Centers</p>
               </div>
 
@@ -202,13 +202,13 @@ const Home = () => {
                 <div className="logo">
                   <IoIosPeople />
                 </div>
-                <CountUp start={0} end={46} delay={1} duration={5}>
+                <Counter start={0} end={46} delay={1} duration={5}>
                   {({ countUpRef }) => (
                     <div>
                       <span ref={countUpRef} />
                     </div>
                   )}
-                </CountUp>
+                </Counter>
                 <p>Active Clients</p>
               </div>
             </div>
@@ -312,10 +312,10 @@ const Home = () => {
 
       {/* examination Section Start */}
       <AnimatedOnView direction='left'>
-        <section className="examination w-100 h-100">
+        <section className="examination">
           <div className="container">
             <div className="row">
-              <div className="col-md-4 data">
+              <div className="col-12 col-md-4 mt-5 data">
                 <div className="image">
                   <img src="https://testpanindia.com/wp-content/uploads/2024/08/Artboard-9-768x299.jpg" alt="image" />
                 </div>
@@ -324,7 +324,7 @@ const Home = () => {
                 <Link to='/'><Button className='text-danger fw-bold'>Read More {">>"}</Button></Link>
               </div>
 
-              <div className="col-md-4 data">
+              <div className="col-12 col-md-4 mt-5 data">
                 <div className="image">
                   <img src="https://testpanindia.com/wp-content/uploads/2024/08/Artboard-11-768x299.jpg" alt="image" />
                 </div>
@@ -333,7 +333,7 @@ const Home = () => {
                 <Link to='/'><Button className='text-danger fw-bold'>Read More {">>"}</Button></Link>
               </div>
 
-              <div className="col-md-4 data">
+              <div className="col-12 col-md-4 mt-5 data">
                 <div className="image">
                   <img src="https://testpanindia.com/wp-content/uploads/2024/08/Artboard-10-768x299.jpg" alt="image" />
                 </div>
@@ -344,10 +344,14 @@ const Home = () => {
 
             </div>
           </div>
+        </section>
+      </AnimatedOnView>
 
-          <div className="container mb-4">
+      <AnimatedOnView direction='left'>
+        <section className="examination2">
+          <div className="container mb-4 mt-4">
             <div className="row">
-              <div className="col-md-4 data">
+              <div className="col-12  col-md-4 mt-4 data">
                 <div className="image">
                   <img src="https://testpanindia.com/wp-content/uploads/2022/03/Optimizing-ExamCentres-768x512.jpg" alt="image" />
                 </div>
@@ -356,7 +360,7 @@ const Home = () => {
                 <Link to='/'><Button className='text-danger fw-bold'>Read More {">>"}</Button></Link>
               </div>
 
-              <div className="col-md-4 data">
+              <div className="col-12 col-md-4 mt-4 data">
                 <div className="image">
                   <img src="https://testpanindia.com/wp-content/uploads/2022/03/Streamlining-Examination-Management-768x512.jpg" alt="image" />
                 </div>
@@ -365,7 +369,7 @@ const Home = () => {
                 <Link to='/'><Button className='text-danger fw-bold'>Read More {">>"}</Button></Link>
               </div>
 
-              <div className="col-md-4 data">
+              <div className="col-12 col-md-4 mt-4 data">
                 <div className="image">
                   <img src="https://testpanindia.com/wp-content/uploads/2022/03/Future-of-Exams-Trends-768x513.jpg" alt="image" />
                 </div>

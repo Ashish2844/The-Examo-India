@@ -26,7 +26,7 @@
   z-index: 100;
 }
 
-.navbar .nav-link{
+.navbar .nav-link {
   width: auto;
   height: auto;
   font-weight: 550;
@@ -34,9 +34,9 @@
   border-bottom: 3px solid transparent;
 }
 
-.navbar .nav-link:hover{
+.navbar .nav-link:hover {
   color: rgb(20, 125, 244);
-  border-bottom:3px solid rgb(20, 125, 244);
+  border-bottom: 3px solid rgb(20, 125, 244);
 }
 
 
@@ -350,10 +350,21 @@ footer .container .row .services p li a:hover {
   margin-top: 20px;
 }
 
+.my-counter {
+  font-size: 2rem;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+element.style {
+  color: white;
+}
+
 .experience .container .row .col-md-2 p {
   color: white;
   margin-top: 10px;
-  font-weight: 600;
+  font-weight: 650;
+  font-size: 25px;
 }
 
 /* Clients */
@@ -409,20 +420,16 @@ footer .container .row .services p li a:hover {
 
 /* Examination */
 
-.examination .container .row .data {
-  width: 380px;
-  height: 500px;
-  margin-top: 50px;
-  overflow: hidden;
-}
 
 .examination .container .row .data .image {
+  width: 100%;
+  height: auto;
   overflow: hidden;
 }
 
 .examination .container .row .data img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   margin-bottom: 20px;
   transition: all 1s ease-in-out;
 }
@@ -430,6 +437,26 @@ footer .container .row .services p li a:hover {
 .examination .container .row .data img:hover {
   transform: scale(1.1);
 }
+
+
+.examination2 .container .row .data .image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.examination2 .container .row .data img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  transition: all 1s ease-in-out;
+}
+
+.examination2 .container .row .data img:hover {
+  transform: scale(1.1);
+}
+
+
 
 
 /* Media 640px */
@@ -513,6 +540,18 @@ footer .container .row .services p li a:hover {
     justify-content: center;
     align-items: center;
   }
+
+  .examination{
+    display: block;
+    visibility: visible;
+  }
+
+  /* .examination .container .row .data {
+    width: 100px;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 50px;
+  } */
 
 }
 
@@ -749,36 +788,36 @@ footer .container .row .services p li a:hover {
 
 
 /* Enquriy Form */
-.enquiry-image .img{
+.enquiry-image .img {
   width: 100%;
   height: 280px;
   position: relative;
 }
 
-.enquiry-image h1{
- position: absolute;
- color: white;
- top:40%;
- left:37%;
- z-index: 100;
- font-size: 60px;
- font-weight: 700;
- text-shadow: 0px 0px 20px black;
+.enquiry-image h1 {
+  position: absolute;
+  color: white;
+  top: 40%;
+  left: 37%;
+  z-index: 100;
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: 0px 0px 20px black;
 }
 
-.enquiry-image .img img{
+.enquiry-image .img img {
   width: 100%;
   height: 100%;
 }
 
 @media (max-width:640px) {
-  .enquiry-image .img{
+  .enquiry-image .img {
     width: 100%;
     height: 150px;
   }
-  
-  .enquiry-image .img img{
+
+  .enquiry-image .img img {
     width: 100%;
     height: 100%;
-  } 
+  }
 }
