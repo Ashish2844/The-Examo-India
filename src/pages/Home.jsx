@@ -14,7 +14,6 @@ import pic2 from './../assets/images/exampic2.jpg'
 import { MdOutlinePersonPin } from "react-icons/md";
 import { FaRegHandshake } from "react-icons/fa";
 import { IoEarthOutline } from "react-icons/io5";
-import Counter from '../components/Counter';
 import { FaFlagCheckered } from "react-icons/fa";
 import { FaMap } from "react-icons/fa";
 import { FaChair } from "react-icons/fa";
@@ -22,6 +21,7 @@ import { IoLocation } from "react-icons/io5";
 import { IoIosPeople } from "react-icons/io";
 import AnimatedSection from '../components/AnimatedSection';
 import AnimatedOnView from '../components/AnimatedOnView';
+import AnimatedCounter from '../components/AnimatedCounter'
 
 
 const Home = () => {
@@ -137,84 +137,22 @@ const Home = () => {
       {/* Purpose Section End */}
 
       {/* Experience Section Start */}
-      <AnimatedOnView direction='left'>
-        <section className='experience'>
-          <h1 className='text-center mt-5'>The Examo Experience</h1>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-2">
-                <div className="logo">
-                  <FaFlagCheckered />
-                </div>
-                <Counter start={0} end={15} delay={2} duration={5}>
-                  {({ countUpRef }) => (
-                    <div>
-                      <span ref={countUpRef}></span>
-                    </div>
-                  )}
-                </Counter>
-                <p>Countries</p>
-              </div>
 
-              <div className="col-md-2">
-                <div className="logo">
-                  <FaMap />
-                </div>
-                <Counter start={0} end={427} delay={1} duration={5}>
-                  {({ countUpRef }) => (
-                    <div>
-                      <span ref={countUpRef} />
-                    </div>
-                  )}
-                </Counter>
-                <p>Cities</p>
-              </div>
-
-              <div className="col-md-2">
-                <div className="logo">
-                  <FaChair />
-                </div>
-                <Counter start={0} end={58739} delay={1} duration={5}>
-                  {({ countUpRef }) => (
-                    <div>
-                      <span ref={countUpRef} />
-                    </div>
-                  )}
-                </Counter>
-                <p>Seats</p>
-              </div>
-
-              <div className="col-md-2">
-                <div className="logo">
-                  <IoLocation />
-                </div>
-                <Counter start={0} end={2896} delay={1} duration={5}>
-                  {({ countUpRef }) => (
-                    <div>
-                      <span ref={countUpRef} />
-                    </div>
-                  )}
-                </Counter>
-                <p>Examination Centers</p>
-              </div>
-
-              <div className="col-md-2">
-                <div className="logo">
-                  <IoIosPeople />
-                </div>
-                <Counter start={0} end={46} delay={1} duration={5}>
-                  {({ countUpRef }) => (
-                    <div>
-                      <span ref={countUpRef} />
-                    </div>
-                  )}
-                </Counter>
-                <p>Active Clients</p>
-              </div>
-            </div>
+      <section className="experience">
+        <h1 className="text-center mt-5">The Examo Experience</h1>
+        <div className="container">
+          <div className="row justify-content-center">
+            <AnimatedCounter icon={<FaFlagCheckered />} label="Countries" end={15} />
+            <AnimatedCounter icon={<FaMap />} label="Cities" end={427} />
+            <AnimatedCounter icon={<FaChair />} label="Seats" end={58739} />
+            <AnimatedCounter icon={<IoLocation />} label="Examination Centers" end={2896} />
+            <AnimatedCounter icon={<IoIosPeople />} label="Active Clients" end={46} />
           </div>
-        </section>
-      </AnimatedOnView>
+        </div>
+      </section>
+
+
+
 
 
       {/* Experience Section End */}

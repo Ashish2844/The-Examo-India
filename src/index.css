@@ -341,24 +341,14 @@ footer .container .row .services p li a:hover {
   transform: rotatey(360deg);
 }
 
-
-
-.experience .container .row .col-md-2 div span {
+.experience .container .row .col-md-2 span {
   font-size: 50px;
   font-weight: 700;
   color: white;
   margin-top: 20px;
 }
 
-.my-counter {
-  font-size: 2rem;
-  color: #ff6600;
-  font-weight: bold;
-}
 
-element.style {
-  color: white;
-}
 
 .experience .container .row .col-md-2 p {
   color: white;
