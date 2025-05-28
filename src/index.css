@@ -178,7 +178,7 @@ footer .container .row .services p li a:hover {
 
 
 /* about */
-
+@media (max-width:1024px) {
 .about {
   width: 100%;
   height: 100%;
@@ -276,6 +276,9 @@ footer .container .row .services p li a:hover {
   text-decoration: none;
   color: white;
 }
+  
+}
+
 
 
 /* Purpose */
