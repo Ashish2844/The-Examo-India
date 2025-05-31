@@ -336,6 +336,7 @@ footer .text-secondary {
   .about .container .row .images {
     width: 50%;
     height: 60vh;
+    display: inline-block;
   }
 
   .about .container .row .images .img1,
@@ -376,11 +377,12 @@ footer .text-secondary {
 /* Desktops (min-width: 1025px) */
 @media (min-width: 1025px) {
   .about .container .row .images {
-    height: 100vh;
+    display: inline-block;
+    height: 600px;
   }
 
   .about .container .row .content {
-    height: 90vh;
+    height: 800px;
   }
 }
 
@@ -1492,8 +1494,26 @@ footer .text-secondary {
 .process .container .row .col-md-2 {
   width: 200px;
   height: 350px;
-  margin-left: 50px;
+  margin-left: 35px;
   text-align: center;
+}
+
+@media (min-width:992px) {
+  .process .container .row .col-md-2{
+    margin-left: 35px;
+  }
+}
+
+@media (min-width:992px) {
+  .process .container .row .col-md-2{
+    margin-left: 35px;
+  }
+}
+
+@media (min-width:992px) {
+  .process .container .row .col-md-2{
+    margin-left: 35px;
+  }
 }
 
 
