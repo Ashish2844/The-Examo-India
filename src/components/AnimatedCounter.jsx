@@ -1,27 +1,26 @@
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
 
+const AnimatedCounter = ({ icon, label, end, duration = 2, delay = 0 }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
-const AnimatedCounter = ({
-  icon,
-  label,
-  end,
-  duration = 5,
-  delay = 0,
-}) => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  const [startCount, setStartCount] = useState(false);
+
+  useEffect(() => {
+    console.log('inView',inView)
+    if (inView) {
+      setStartCount(true);
+    }
+  }, [inView]);
 
   const variants = {
-    hidden: {
-      opacity: 0,
-      y: 100, // animate from bottom
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, delay },
-    },
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay } },
   };
 
   return (
@@ -33,10 +32,12 @@ const AnimatedCounter = ({
       className="col-md-2 text-center"
     >
       <div className="logo mb-2">{icon}</div>
-      {inView && (
+      {startCount ? (
         <CountUp start={0} end={end} duration={duration}>
           {({ countUpRef }) => <span ref={countUpRef} className="h4 d-block" />}
         </CountUp>
+      ) : (
+        <span className="h4 d-block">0</span>
       )}
       <p>{label}</p>
     </motion.div>

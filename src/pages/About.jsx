@@ -91,35 +91,35 @@ const About = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-2 content">
-                                <h5 className='fw-bold'>Integrity and Transparency</h5>
-                                <p className='text-center text-secondary'>We believe in conducting all our operations with honesty, fairness, and openness. Integrity is at the heart of every exam we facilitate, ensuring trust and credibility across all stakeholders.</p>
+                                <h5 className='fw-bold mt-4'>Integrity and Transparency</h5>
+                                <p className='text-center text-secondary ms-2'>We believe in conducting all our operations with honesty, fairness, and openness. Integrity is at the heart of every exam we facilitate, ensuring trust and credibility across all stakeholders.</p>
                             </div>
                             <div className="col-md-2 content">
-                                <h5 className='fw-bold mt-5 ms-3'>
+                                <h5 className='fw-bold mt-1 ms-3'>
                                     Innovation and Technology Leadership
                                 </h5>
-                                <p className='text-center text-secondary'>
+                                <p className='text-center text-secondary ms-3'>
                                     We continuously embrace emerging technologies to enhance the examination process. Our commitment to innovation drives us to create smarter, more efficient, and secure solutions for modern-day assessments.</p>
                             </div>
                             <div className="col-md-2 content">
-                                <h5 className='fw-bold'>
+                                <h5 className='fw-bold mt-4'>
                                     Customer-Centric Approach
                                 </h5>
-                                <p className='text-center text-secondary'>
+                                <p className='text-center text-secondary ms-2'>
                                     Our clients’ needs are at the core of our services. We listen, adapt, and tailor our solutions to ensure seamless experiences and long-term partnerships based on trust, support, and success.
                                 </p>
 
                             </div>
                             <div className="col-md-2 content">
-                                <h5 className='fw-bold mt-3'>
+                                <h5 className='fw-bold mt-3 ms-2'>
                                     Excellence in Service Delivery
                                 </h5>
-                                <p className='text-center text-secondary'>
+                                <p className='text-center text-secondary ms-1'>
                                     We strive for perfection in every project, big or small. Our team is dedicated to delivering high-quality service with precision, speed, and professionalism, ensuring every examination experience is smooth and hassle-free.
                                 </p>
                             </div>
                             <div className="col-md-2 content">
-                                <h5 className='fw-bold'>
+                                <h5 className='fw-bold mt-4'>
                                     Security and Confidentiality
                                 </h5>
                                 <p className='text-center text-secondary'>
@@ -127,10 +127,10 @@ const About = () => {
                                 </p>
                             </div>
                             <div className="col-md-2 content">
-                                <h5 className='fw-bold mt-5'>
+                                <h5 className='fw-bold mt-4 ms-1'>
                                     Accessibility and Inclusiveness
                                 </h5>
-                                <p className='text-center text-secondary'>
+                                <p className='text-center text-secondary ms-2'>
                                     We are committed to making examinations accessible to all candidates across diverse geographies and backgrounds. Our infrastructure is designed to accommodate different needs, promoting fairness and equal opportunity.
                                 </p>
                             </div>

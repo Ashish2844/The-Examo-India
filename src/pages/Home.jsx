@@ -4,12 +4,14 @@ import Footer from '../components/Footer'
 import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
 import { FaArrowCircleRight } from "react-icons/fa";
-import Slider from "react-slick";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import pic1 from './../assets/images/pic3.jpg'
+import pic1 from '../assets/images/pic3.jpg'
 import pic2 from './../assets/images/exampic2.jpg'
 import { MdOutlinePersonPin } from "react-icons/md";
 import { FaRegHandshake } from "react-icons/fa";
@@ -19,9 +21,8 @@ import { FaMap } from "react-icons/fa";
 import { FaChair } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
 import { IoIosPeople } from "react-icons/io";
-import AnimatedSection from '../components/AnimatedSection';
 import AnimatedOnView from '../components/AnimatedOnView';
-import AnimatedCounter from '../components/AnimatedCounter'
+import CountUp from 'react-countup';
 
 
 const Home = () => {
@@ -32,7 +33,7 @@ const Home = () => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 3000,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5500,
     cssEase: "linear"
   };
 
@@ -41,7 +42,7 @@ const Home = () => {
       <section className='header'><Header /></section>
 
       {/* Slider Section Start */}
-      <AnimatedSection delay={0.5}>
+      <section>
         <section className="slider">
           <div className="slider-container mb-4">
             <Slider {...settings}>
@@ -60,7 +61,8 @@ const Home = () => {
             </Slider>
           </div>
         </section>
-      </AnimatedSection>
+      </section>
+
       {/* Slide Section End */}
 
 
@@ -69,24 +71,54 @@ const Home = () => {
       <AnimatedOnView direction="left">
         <section className="about mt-4" style={{ padding: '2rem', background: '#f5f5f5' }}>
           <div className="container">
-            <div className="row">
-              <div className="col-md-6  images">
-                <img src="https://testpanindia.com/wp-content/uploads/2023/09/Photo-2.jpg" alt="" className='img1' />
-                <img src="https://testpanindia.com/wp-content/uploads/2023/09/Photo-3.jpg" alt="" className='img2' />
-                <img src="https://testpanindia.com/wp-content/uploads/2023/09/Photo-1.jpg" alt="" className='img3' />
+            <div className="row align-items-center">
+              {/* Image Section */}
+              <div className="col-12 col-md-6 images mb-4 mb-md-0">
+                <img
+                  src="https://testpanindia.com/wp-content/uploads/2023/09/Photo-2.jpg"
+                  alt="Photo 2"
+                  className="img1"
+                />
+                <img
+                  src="https://testpanindia.com/wp-content/uploads/2023/09/Photo-3.jpg"
+                  alt="Photo 3"
+                  className="img2"
+                />
+                <img
+                  src="https://testpanindia.com/wp-content/uploads/2023/09/Photo-1.jpg"
+                  alt="Photo 1"
+                  className="img3"
+                />
               </div>
-              <div className="col-md-6 content">
-                <h3 className='text-primary'>Who We Are ?</h3>
-                <h2 className='text-secondary'>About Examo India</h2>
-                <p>Founded in early 2016 and recognized as a Startup Company by the Department for Promotion for Industry & Internal Trade (DPIIT), The Examo India has been a pioneer in providing examination delivery, process and assessment solutions, and infrastructural support to Educational Institutions, Government/Public Sector and Corporates.</p>
-                <p>The Examo India is a trusted examination delivery and infrastructure provider in the public and private sectors. On their behalf, we securely deliver a reliable, convenient and hassle-free examination experience to those seeking to improve their lives by starting a new career or developing skills/qualifications for professional development. </p>
-                <button className='text-center'><a href="#">Test Center Registration <FaArrowCircleRight /></a></button>
+
+              {/* Content Section */}
+              <div className="col-12 col-md-6 content">
+                <h3 className="text-primary">Who We Are ?</h3>
+                <h2 className="text-secondary">About Examo India</h2>
+                <p>
+                  Founded in early 2016 and recognized as a Startup Company by the
+                  Department for Promotion for Industry & Internal Trade (DPIIT), The
+                  Examo India has been a pioneer in providing examination delivery,
+                  process and assessment solutions, and infrastructural support to
+                  Educational Institutions, Government/Public Sector and Corporates.
+                </p>
+                <p>
+                  The Examo India is a trusted examination delivery and infrastructure
+                  provider in the public and private sectors. On their behalf, we
+                  securely deliver a reliable, convenient and hassle-free examination
+                  experience to those seeking to improve their lives by starting a new
+                  career or developing skills/qualifications for professional development.
+                </p>
+                <button className="text-center">
+                  <a href="#">
+                    Test Center Registration <FaArrowCircleRight />
+                  </a>
+                </button>
               </div>
             </div>
           </div>
         </section>
       </AnimatedOnView>
-
 
       {/* About Section End */}
 
@@ -133,7 +165,6 @@ const Home = () => {
         </section>
       </AnimatedOnView>
 
-
       {/* Purpose Section End */}
 
       {/* Experience Section Start */}
@@ -141,19 +172,40 @@ const Home = () => {
       <section className="experience">
         <h1 className="text-center mt-5">The Examo Experience</h1>
         <div className="container">
-          <div className="row justify-content-center">
-            <AnimatedCounter icon={<FaFlagCheckered />} label="Countries" end={15} />
-            <AnimatedCounter icon={<FaMap />} label="Cities" end={427} />
-            <AnimatedCounter icon={<FaChair />} label="Seats" end={58739} />
-            <AnimatedCounter icon={<IoLocation />} label="Examination Centers" end={2896} />
-            <AnimatedCounter icon={<IoIosPeople />} label="Active Clients" end={46} />
+          <div className="row">
+            <div className="col-md-2">
+              <div className="logo mb-2"><FaFlagCheckered /></div>
+              <CountUp start={0} end={20} duration={10} />
+              <p>Countries</p>
+            </div>
+            <div className="col-md-2">
+              <div className="logo"><FaMap /></div>
+              <CountUp start={0} end={427} duration={10} />
+              <p>Cities</p>
+            </div>
+            <div className="col-md-2">
+              <div className="logo"><FaChair /></div>
+              <CountUp start={0} end={58739} duration={10} />
+              <p>Seats</p>
+            </div>
+            <div className="col-md-2">
+              <div className="logo"><IoLocation /></div>
+              <CountUp start={0} end={2896} duration={10} className='mt-4' />
+              <p>Examination Centers</p>
+            </div>
+            <div className="col-md-2">
+              <div className="logo"><IoIosPeople /></div>
+               <CountUp start={0} end={46} duration={10} />
+               <p>Active Clients</p>
+            </div>
+
+
+
+            
+           
           </div>
         </div>
       </section>
-
-
-
-
 
       {/* Experience Section End */}
 

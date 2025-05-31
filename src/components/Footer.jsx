@@ -28,7 +28,7 @@ const Footer = () => {
                             <p>Building solutions for a better examo experience. Reach out to us with any questions or feedback.</p>
                         </div>
 
-                        <div className="services col-md-4 mb-4">
+                        <div className="footer-services col-md-4 mb-4">
                             <h5>Our Services</h5>
                             <p>
                                 <li><a href="#">Examination Delivery</a></li>
