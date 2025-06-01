@@ -74,21 +74,31 @@ const Home = () => {
             <div className="row align-items-center">
               {/* Image Section */}
               <div className="col-12 col-md-6 images mb-4 mb-md-0">
-                <img
-                  src="https://testpanindia.com/wp-content/uploads/2023/09/Photo-2.jpg"
-                  alt="Photo 2"
-                  className="img1"
-                />
-                <img
-                  src="https://testpanindia.com/wp-content/uploads/2023/09/Photo-3.jpg"
-                  alt="Photo 3"
-                  className="img2"
-                />
-                <img
-                  src="https://testpanindia.com/wp-content/uploads/2023/09/Photo-1.jpg"
-                  alt="Photo 1"
-                  className="img3"
-                />
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-4">
+                      <img
+                        src="https://testpanindia.com/wp-content/uploads/2023/09/Photo-2.jpg"
+                        alt="Photo 2"
+                        className="img1"
+                      />
+                    </div>
+                    <div className="col-md-4">
+                      <img
+                        src="https://testpanindia.com/wp-content/uploads/2023/09/Photo-3.jpg"
+                        alt="Photo 3"
+                        className="img2"
+                      />
+                    </div>
+                    <div className="col-md-4">
+                      <img
+                        src="https://testpanindia.com/wp-content/uploads/2023/09/Photo-1.jpg"
+                        alt="Photo 1"
+                        className="img3"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Content Section */}
@@ -195,14 +205,14 @@ const Home = () => {
             </div>
             <div className="col-md-2">
               <div className="logo"><IoIosPeople /></div>
-               <CountUp start={0} end={46} duration={10} />
-               <p>Active Clients</p>
+              <CountUp start={0} end={46} duration={10} />
+              <p>Active Clients</p>
             </div>
 
 
 
-            
-           
+
+
           </div>
         </div>
       </section>

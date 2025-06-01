@@ -14,9 +14,9 @@ const Services = () => {
                 <section className='delivery'>
                     <div className="container mt-5">
                         <div className="row mt-5 mb-5">
-                            <div className="col-md-6 mt-4 mb-4">
+                            <div className="col-md-6">
                                 <div className="image">
-                                    <img src="https://media.gettyimages.com/id/1072472414/photo/male-student-in-classroom-writing-in-notebook-stock-image.jpg?s=612x612&w=0&k=20&c=cuQi67TN1tyuH5JhaDFW_O7AMabgDsGnQMAfaau4M1E=" alt="image" className='w-100 h-100' />
+                                    <img src="https://media.gettyimages.com/id/1072472414/photo/male-student-in-classroom-writing-in-notebook-stock-image.jpg?s=612x612&w=0&k=20&c=cuQi67TN1tyuH5JhaDFW_O7AMabgDsGnQMAfaau4M1E=" alt="image" />
                                 </div>
                             </div>
                             <div className="col-md-6 mt-4 mb-4 content">
@@ -124,9 +124,9 @@ const Services = () => {
                             </p>
 
                         </div>
-                        <div className="col-md-6 image mt-5 mb-5">
-                            <div className="image rounded-4">
-                                <img src="https://media.gettyimages.com/id/170486052/photo/the-secondary-school-certificate-ssc-dakhil-and-vocational-examinations-started-today-at-10-am.jpg?s=612x612&w=0&k=20&c=krn7c7Hb3N11HvQF4xua9J1VuVW4nbjh6t4Fh9cwxBI=" alt="image" className='rounded-4' />
+                        <div className="col-md-6 mt-5 mb-5">
+                            <div className="image">
+                                <img src="https://media.gettyimages.com/id/170486052/photo/the-secondary-school-certificate-ssc-dakhil-and-vocational-examinations-started-today-at-10-am.jpg?s=612x612&w=0&k=20&c=krn7c7Hb3N11HvQF4xua9J1VuVW4nbjh6t4Fh9cwxBI=" alt="image" />
                             </div>
                         </div>
                     </div>
